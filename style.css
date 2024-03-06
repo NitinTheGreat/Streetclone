@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.logo img {
+    height: 5vh;
+    width: auto;
+    margin-left: 27px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5vw;
+    justify-content: flex-start;
+}
+
+.menu li {
+    left: 10px;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0 10px;
+    right: 30%;
+}
+
+.search-input {
+    border: 1px solid rgb(46, 27, 46);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.icons img {
+    height: 30px;
+    width: auto;
+}
+.button-nav{
+    display: flex;
+    gap: 30px;
+}
+.admin-login-button {
+    background: linear-gradient(to right, #6200ea, #bb86fc);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 16px;
+}
+
+.admin-login-button:hover {
+    background: linear-gradient(to right, #bb86fc, #6200ea);
+    cursor: pointer;
+}
+.sighting-button{
+    background: linear-gradient(to right, #6200ea, #bb86fc);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 16px;
+    
+}
+    .sighting-button:hover {
+        background: linear-gradient(to right, #bb86fc, #6200ea);
+        cursor: pointer;
+    }
+
+    /* Nav bar ends hereeeeeeeeeeeeeeeeeeeee */
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        position: relative;
+         top: 17vh;
+         left: 1.5vw;
+         
+
+    }
+    .text {
+        flex: 1;
+        padding-right: 50px;
+    }
+    .headline {
+        font-size: 36px;
+        /* font-weight: bold; */
+        margin-bottom: 20px;
+        /* background: linear-gradient(to right, #6200ea, #bb86fc); */
+        -webkit-background-clip: text;
+        /* color: transparent; */
+    }
+    .subheading {
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 30px;
+    }
+    .button {
+        background: linear-gradient(to right, #bb86fc, #6200ea);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .button:hover {
+        background: linear-gradient(to right, #6200ea, #bb86fc);
+    }
+    .image {
+        flex: 1;
+        text-align: right;
+        position: relative;
+        right: 2vw;
+    }
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* colors for the text */
+    .headline #Humanity{
+        font-size: 36px;
+            font-weight: bold;
+            background: linear-gradient(to right, #d322ee90, #9b0482);
+            -webkit-background-clip: text;
+            color: transparent;
+    }
+    .sub-headline{
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, #6200ea, #bb86fc);
+        -webkit-background-clip: text;
+    }
+    .sub-headline #homeless{
+        font-size: 36px;
+            font-weight: bold;
+            background: linear-gradient(to right, #7814ea90, #8c049b);
+            -webkit-background-clip: text;
+            color: transparent;
+
+    }
