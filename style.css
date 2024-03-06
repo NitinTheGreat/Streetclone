@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -82,11 +84,14 @@ body {
     padding: 10px 20px;
     border-radius: 18px;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .admin-login-button:hover {
     background: linear-gradient(to right, #bb86fc, #6200ea);
     cursor: pointer;
+    text-decoration: underline;
+    /* transition: all 15s ease; */
 }
 .sighting-button{
     background: linear-gradient(to right, #6200ea, #bb86fc);
@@ -100,6 +105,7 @@ body {
     .sighting-button:hover {
         background: linear-gradient(to right, #bb86fc, #6200ea);
         cursor: pointer;
+        text-decoration: underline;
     }
 
     /* Nav bar ends hereeeeeeeeeeeeeeeeeeeee */
@@ -111,6 +117,7 @@ body {
         position: relative;
          top: 17vh;
          left: 1.5vw;
+         margin-bottom: 36vh;
          
 
     }
@@ -119,7 +126,7 @@ body {
         padding-right: 50px;
     }
     .headline {
-        font-size: 36px;
+        font-size: 46px;
         /* font-weight: bold; */
         margin-bottom: 20px;
         /* background: linear-gradient(to right, #6200ea, #bb86fc); */
@@ -156,7 +163,7 @@ body {
 
     /* colors for the text */
     .headline #Humanity{
-        font-size: 36px;
+        font-size: 54px;
             font-weight: bold;
             background: linear-gradient(to right, #d322ee90, #9b0482);
             -webkit-background-clip: text;
@@ -176,4 +183,42 @@ body {
             -webkit-background-clip: text;
             color: transparent;
 
+    }
+
+    /* slides */
+    .slideParent{
+        position: relative;
+    }
+    .slide {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .slide img {
+        height: 100vh;
+        width: auto;
+        transition: transform 0.5s ease;
+    }
+    
+    #prevBtn,
+    #nextBtn {
+        position: absolute;
+        top: 50%;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        z-index: 99;
+    }
+    
+    #prevBtn {
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    #nextBtn {
+        right: 0;
+        transform: translateY(-50%);
     }
