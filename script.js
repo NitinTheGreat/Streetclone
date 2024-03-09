@@ -24,4 +24,4 @@ const images = document.querySelectorAll('.slide img');
         nextBtn.addEventListener('click', showNextImage);
 
         // Automatic slideshow
-        setInterval(showNextImage, 4000);
+        setInterval(showNextImage, 6000);
