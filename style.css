@@ -172,7 +172,7 @@ body {
     }
     .sub-headline{
         font-size: 36px;
-        font-weight: bold;
+        font-weight: 500;
         margin-bottom: 20px;
         background: linear-gradient(to right, #6200ea, #bb86fc);
         -webkit-background-clip: text;
