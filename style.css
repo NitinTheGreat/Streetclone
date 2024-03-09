@@ -158,8 +158,8 @@ body {
         right: 2vw;
     }
     .image img {
-        max-width: 100%;
-        height: auto;
+        max-width: 800px;
+        height: 400px;
     }
 
     /* colors for the text */
