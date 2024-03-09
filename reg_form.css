@@ -10,12 +10,113 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  background: rgb(130, 106, 251);
+  padding: 70px 20px 20px; /* Added top padding to accommodate fixed navbar */
+  background: linear-gradient(to bottom, #825ee6, #55b7ff);
 }
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.logo img {
+  margin-top: 5px;
+      height: 8vh;
+  width: auto;
+  margin-left: 27px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5vw;
+  justify-content: flex-start;
+}
+
+.menu li {
+  left: 10px;
+  margin-right: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0 10px;
+  right: 30%;
+}
+
+.search-input {
+  border: 1px solid rgb(46, 27, 46);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.icons img {
+  height: 30px;
+  width: auto;
+}
+.button-nav{
+  display: flex;
+  gap: 30px;
+}
+.admin-login-button {
+  background: linear-gradient(to right, #6200ea, #bb86fc);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 18px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.admin-login-button:hover {
+  background: linear-gradient(to right, #bb86fc, #6200ea);
+  cursor: pointer;
+  text-decoration: underline;
+  /* transition: all 15s ease; */
+}
+.sighting-button{
+  background: linear-gradient(to right, #6200ea, #bb86fc);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 18px;
+  font-size: 16px;
+  
+}
+  .sighting-button:hover {
+      background: linear-gradient(to right, #bb86fc, #6200ea);
+      cursor: pointer;
+      text-decoration: underline;
+  }
+
+  /* Nav bar ends hereeeeeeeeeeeeeeeeeeeee */
 .container {
   position: relative;
   max-width: 700px;
+  margin-top: 20vh;
   width: 100%;
   background: #fff;
   padding: 25px;
